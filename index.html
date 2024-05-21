@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extended Student Form</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="form-container">
+        <div class="heading-2">
+            <h2>Extended Student Information Form</h2>
+        </div>
+        <div class="s-form">
+            <form id="studentForm">
+                <div class="name"> 
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter first name" required>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter last name" required>
+                </div>  
+                <div class="name">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="name">
+                    <label for="gender">Gender:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Female</label>
+                        
+                        <input type="radio" id="other" name="gender" value="other" required>
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+                <div class="name">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter email" required>
+                </div>
+                <label for="courses">Select Courses:</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="course1" name="courses" value="Mathematics">
+                    <label for="course1">Mathematics</label>
+                    <input type="checkbox" id="course2" name="courses" value="Science">
+                    <label for="course2">Science</label>
+                    <input type="checkbox" id="course3" name="courses" value="History">
+                    <label for="course3">History</label>
+                    <input type="checkbox" id="course4" name="courses" value="Art">
+                    <label for="course4">Art</label>
+                </div>
+                <label for="grade">Grade:</label>
+                <select id="grade" name="grade" required>
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                    <option value="F">F</option>
+                </select>
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" placeholder="Enter description" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <h2>Search Student</h2>
+        <form id="searchForm">
+            <label for="searchWord">Search by Name:</label>
+            <input type="text" id="searchWord" name="searchWord" placeholder="Enter first or last name" required>
+            <button type="submit" id="searchButton">Search</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
